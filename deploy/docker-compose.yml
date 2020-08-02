@@ -1,0 +1,15 @@
+version: '3'
+services:
+  tarapp:
+    build:
+          context: ../
+          dockerfile: Dockerfile
+    volumes:
+        - /tmp/data:/app/api_uploaded_file
+    environment:
+        - UPLOAD_DIRECTORY="/app/api_uploaded_files"
+        - APP_SETTINGS="project.config.DevelopmentConfig"
+    tty: true
+    ports:
+      - '5001:5001'
+

@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tarapp
+  labels:
+    name: tarapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tarapp
+  template:
+    metadata:
+      labels:
+        app: tarapp
+    spec:
+      containers:
+      - name: tarapp
+        image: kapilsahu1038/tarapp:latest
+        env:
+        - name: UPLOAD_DIRECTORY
+          value: "./api_uploaded_files"
+        - name: APP_SETTINGS
+          value: "project.config.DevelopmentConfig"
+        volumeMounts:
+          - name: files-volume-mount
+            mountPath: /app/api_uploaded_files
+      volumes:
+      - name: files-volume-mount
+        persistentVolumeClaim:
+          claimName: fileserver-pvc
+      restartPolicy: Always
