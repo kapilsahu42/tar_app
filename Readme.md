@@ -15,3 +15,12 @@ do sh deploy.sh in root directory
 ### docker image can be found in dockerhub as kapilsahu1038/tarapp:latest
 
 Note : minikube with hyerkit has some problem in pulling image from dockerhub
+
+Note : application api will be exposed to  http://{minikube_ip}:5001/
+
+Note : Applictaion uses sqlite for saving username and passowrd for generating Tokens for API calls 
+
+##TO DO 
+SWAGGER documentaion 
+docker-compose test 
+       
