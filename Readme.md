@@ -27,7 +27,7 @@ data from container will be saved in /tmp/data directory on host
 ### swagger dynamic-html documenation in /swagger_doc directory 
 
 ### for deployment to minikube 
-do sh deploy.sh in root directory
+    sh deploy.sh in root directory
 
 
 ### docker image can be found in dockerhub as kapilsahu1038/tarapp:latest
