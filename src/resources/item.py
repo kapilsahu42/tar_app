@@ -7,7 +7,7 @@ from resources.constants import UPLOAD_DIRECTORY
 from werkzeug.utils import secure_filename
 
 
-ALLOWED_EXTENSIONS = set(['tar','pdf'])
+ALLOWED_EXTENSIONS = set(['tar'])
 
 if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
