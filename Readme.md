@@ -36,7 +36,9 @@ Note : application api will be exposed to  http://{minikube_ip}:5001/
 
 Note : Applictaion uses sqlite for saving username and passowrd for generating Tokens for API calls 
 
-##TO DO 
-SWAGGER documentaion 
+
+### swagger dynamic-html documenation in /swagger_doc directory 
+
+### TO DO
 docker-compose test 
        
