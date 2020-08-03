@@ -24,7 +24,6 @@ def get_filename_from_cd(cd):
         return None
     return fname[0]
 
-
 def test_update_token():
     try:
         response = requests.post(TOKEN_URL,headers=headers,json={'username':username ,'password':password}) 
