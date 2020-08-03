@@ -39,6 +39,4 @@ Note : Applictaion uses sqlite for saving username and passowrd for generating T
 
 ### swagger dynamic-html documenation in /swagger_doc directory 
 
-### TO DO
-docker-compose test 
        

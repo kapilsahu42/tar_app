@@ -1,0 +1,7 @@
+sut:
+  build:
+        context: ../
+        dockerfile: Dockerfile
+        command: ["pytest","test_tar_app.py"]
+
+
